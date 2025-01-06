@@ -1,0 +1,152 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* Container Styles */
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    margin-bottom: 20px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #f39c12;
+    box-shadow: 0px 0px 10px rgba(243, 156, 18, 0.5);
+}
+
+/* Submit Button */
+button {
+    background: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(2px);
+    background: #e74c3c;
+}
+
+/* Quiz Output */
+.quiz-output {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Quiz Card */
+.quiz {
+    background: #fdfbfb;
+    border: 2px solid #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Question */
+.quiz h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Options */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.options button {
+    flex: 1 1 calc(50% - 10px);
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: 2px solid #bdc3c7;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.options button:hover {
+    background: #3498db;
+    color: #ffffff;
+    border-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.options button.correct {
+    background: #2ecc71;
+    color: #ffffff;
+    border-color: #27ae60;
+}
+
+.options button.wrong {
+    background: #e74c3c;
+    color: #ffffff;
+    border-color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
